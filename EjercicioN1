@@ -1,0 +1,22 @@
+package com.mycompany.ejerciciosdepractica;
+
+import java.util.Scanner;
+
+public class EjercicioN1 {
+
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        int n, x, s, m, h;
+        System.out.println("* Ingrese cantidada de segundos:");
+        System.out.println("");
+        n = num.nextInt();
+        m = n / 60;
+        s = n % 60;
+        h = m / 60;
+        m = m % 60;
+        System.out.println("");
+        System.out.println("** El total es: " + h + " hora, " + m + " minutos, con " + s + " segundos **");
+
+    }
+
+}
