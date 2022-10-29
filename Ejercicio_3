@@ -1,0 +1,22 @@
+package com.mycompany.ejercicios_de_practica;
+
+import java.util.Scanner;//traemos la biblioteca Scanner para poder ingresar datos
+
+public class Ejercicio_3 {
+
+    public static void main(String[] args) {
+        Scanner horasTrabajadas = new Scanner(System.in);
+        //definimos las variables
+        int horas;
+        int costoHoras = 350;
+        int sueldoTotal;
+
+        System.out.println("* Ingrese horas trabajadas en un mes :");
+        horas = horasTrabajadas.nextInt();
+
+        sueldoTotal = horas * costoHoras;
+
+        System.out.println("** El sueldo del trabajador en un mes es: $" + sueldoTotal + " **");
+    }
+
+}
