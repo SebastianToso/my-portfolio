@@ -1,0 +1,39 @@
+package com.mycompany.ejerciciosdepractica;
+
+import java.util.Scanner;
+
+public class EjercicioN2 {
+
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+        int cantidad;
+        int can1000 = 0, can500 = 0, can200 = 0, can100 = 0;
+
+        System.out.println("* Ingrese el monto que desea retirar: *");
+        System.out.println("");
+        cantidad = leer.nextInt();
+        while (cantidad > 1000) {
+            can1000++;
+            cantidad = cantidad - 1000;
+        }
+        while (cantidad >= 500) {
+            can500++;
+            cantidad = cantidad - 500;
+        }
+        while (cantidad >= 200) {
+            can200++;
+            cantidad = cantidad - 200;
+        }
+        while (cantidad >= 100) {
+            can100++;
+            cantidad = cantidad - 100;
+        }
+        System.out.println("");
+        System.out.println("** Se entraga: " + can1000 + " billetes de $1000 **");
+        System.out.println("** Se entraga: " + can500 + " billetes de $500 **");
+        System.out.println("** Se entraga: " + can200 + " billetes de $200 **");
+        System.out.println("** Se entraga: " + can100 + " billetes de $100 **");
+
+    }
+}
