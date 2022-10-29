@@ -1,0 +1,25 @@
+package com.mycompany.ejercicio_1;
+
+public class Ejercicio_1 {
+    public static void main(String[] args) {
+      
+    int a=8;
+    int b=4;
+    
+    
+    int suma=a+b;
+    int resta=a-b;
+    int multi=a*b;
+    int Div=a/b;
+    
+  
+    System.out.println("** Operaciones que se realiza entre 8 y 4 **");
+    System.out.println(" ");
+    System.out.println("** La Suma de " + a + " más " + b + " es igual a " + suma);
+    System.out.println("** La Resta de " + a + " menos " + b + " es igual a " + resta);
+    System.out.println("** La Multiplicación de " + a + " por " + b + " es igual a " + multi);
+    System.out.println("** La División de " + a + " entre " + b + " es igual a " + Div);
+        
+           
+            }
+}
