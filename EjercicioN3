@@ -1,0 +1,31 @@
+package com.mycompany.ejerciciosdepractica;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import java.util.Date;
+
+public class EjercicioN3 {
+
+    public static void convertTimeTo12(String tiempo) throws Exception {
+        SimpleDateFormat displayFormat = new SimpleDateFormat("hh:mm:aa");
+        SimpleDateFormat parseFormat = new SimpleDateFormat("HH:mm");
+        Date dato = parseFormat.parse(tiempo);
+
+        System.out.println(displayFormat.format(dato));
+
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        Scanner leer = new Scanner(System.in);
+
+        System.out.println("** Ingrese la hora y los minutos: **");
+        System.out.println("");
+        String tiempo = leer.nextLine().trim();
+
+        if (tiempo.length() < 12) {
+            convertTimeTo12(tiempo);
+        }
+    }
+
+}
