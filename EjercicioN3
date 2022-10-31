@@ -1,0 +1,37 @@
+package com.mycompany.ejerciciosdepractica;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import java.util.Date;
+
+public class EjercicioN3 {
+
+    public static void convertTimeTo12(String time) throws Exception {
+        SimpleDateFormat displayFormat = new SimpleDateFormat("hh:mm:aa");
+        SimpleDateFormat parseFormat = new SimpleDateFormat("HH:mm");
+        Date date = parseFormat.parse(time);
+
+        System.out.println(displayFormat.format(date));
+
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("** Ingrese la hora y los minutos: **");
+        System.out.println("");
+        String time = scanner.nextLine().trim();
+
+        if (time.length() < 7) {
+            convertTimeTo12(time);
+        } else {
+            convertTimeTo24(time);
+        }
+    }
+
+    private static void convertTimeTo24(String time) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+}
